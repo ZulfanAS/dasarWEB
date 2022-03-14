@@ -1,6 +1,6 @@
 h2{
     color : orange;
-    font-family: Trebuchet MS;
+    font-family: Trebuchet MS ;
     text-align: center;
 }
 
@@ -9,18 +9,19 @@ h2{
     width: 100px;
     color: #fff;
     margin: 10px;
-    background: orange;
+    background:orange ;
 }
 
 #kotak{
     width: 400px;
     color: #fff;
     background: blue;
-    padding: 50px;
+    padding: 50px; 
+    
 }
 
 body{
-    background: url('bunga2.jpg'), url('bunga1.jpg');
-    background-repeat: no-repeat,repeat;
+    background: url('img/tree1.jpg'), url('img/field1.jpg');
+    background-repeat:no-repeat, repeat;
     color: white;
 }
