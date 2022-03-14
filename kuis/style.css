@@ -4,11 +4,12 @@
     box-sizing : border-box;
     }
     body{
-    backgroud : #dedede;
+    background : #dedede;
     font-family : 'Verdana',arial,sans-serif;
     font-size : 15px;
     }
     p{
+    margin-left : 250px;
     margin-bottom : 20px;
     line-height : 1.5em;
     }
@@ -56,24 +57,24 @@
         border-bottom : 1px solid #dedede;
         margin-bottom : 10px;
         padding : 10px 5px;
-        font-color : #D3D2ED;
+        color : #050505;
         }
         .left ul li a:hover{
         color:#461AF3;
         }
         .middle{
-        width : 500px;
+        width : 250px;
         border : 1px solid #dedede;
         padding : 10px;
         margin : 10px;
-        float : left;
+        /* float : left; */
         }
         .middle img{
         max-width : 100%;
         height : auto;
         }
         .middle a{
-            font-wight:bold;
+            font-weight:bold;
             }
             .right{
             width : 250px;
@@ -129,15 +130,16 @@
             background : #D6CCFE;
             }
             .middle{
-            width : 68%;
-            float : right;
+            width : 65%;
+            /* float : right; */
             }
             .right{
             clear : both;
             padding : 1% 4%;
             width : auto;
-            float : none;
+            float : right;
             background : #D6CCFE;
+            margin-top: -370px;
             }
             }
             /* untuk ukuran layar 700px kebawah */
