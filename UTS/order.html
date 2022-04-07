@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Makan</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: url(img/warteg.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: coral;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: coral;
+        }
+
+        div.container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 50px;
+            padding-top: 10px;
+            margin: 50px;
+            width: 500px;
+            margin-left: 325px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Pesen Makanan</h3>
+        <form method="POST" action="tampil.php">
+            <label for="id_pembeli">ID Pembeli</label>
+            <input type="text" id="id_pembeli" name="id_pembeli" placeholder="ID Pembeli..">
+
+            <label for="nm_pembeli">Nama Pembeli</label>
+            <input type="text" id="nm_pembeli" name="nm_pembeli" placeholder="Nama Pembeli..">
+            <br>
+            <label for="status">Status Pembeli</label>
+            <br><br>
+            <label class="container">Member
+                <input type="radio" name="member" value="member" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Non-Member
+                <input type="radio" name="member" value="non_member">
+                <span class="checkmark"></span>
+            </label>
+            <br>
+            <br>
+            <label for="makanan">Makanan</label>
+            <select id="makanan" name="makanan">
+                <option value="rendang">Rendang - Rp 30.000</option>
+                <option value="ayam_crispy">Ayam Crispy - Rp 20.000</option>
+                <option value="terong_balado">Terong Balado - Rp 10.000</option>
+                <option value="tongkol_suwir">Tongkol Suwir - Rp 15.000</option>
+                <option value="krecek">Krecek - Rp 25.000</option>
+            </select>
+
+            <label for="porsi">Jumlah Porsi</label>
+            <input type="number" id="porsi" name="porsi" placeholder="Jumlah Porsi..">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

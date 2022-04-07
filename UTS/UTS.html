@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELAMAT DATANG DI WARTEG</title>
+    <link rel="stylesheet" href="stylefont.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <p class="selamat">SELAMAT DATANG DI WARTEG DOA EMAK</p>
+    <div style="display:flex; justify-content: center; margin-bottom: 30px; margin-top: 50px;">
+        <a href="profil.html"><button style="width: 200px; height: 100px; font-weight: bolder;">Profil Owner</button></a>
+        <a href="profilW.html"><button style="width: 200px; height: 100px; font-weight: bolder; margin: 0 50px;">Profil Warteg</button></a>
+        <a href="order.html"><button style="width: 200px; height: 100px; font-weight: bolder;">Pesan Makan</button></a>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">1 / 5</div> -->
+            <div style="text-align: center;">
+                <img src="img/rendang.jpg" style="width: 500px; height: 300px; height: 300px;">
+            </div>
+            <div class="text">Daging sapi menggunakan rempah tradisional</div>
+        </div>
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">2 / 5</div> -->
+            <div style="text-align: center;">
+                <img src="img/balado.jpg" style="width:500px; height: 300px;">
+                <div class="text">Terong dengan menggunakan cabai balado</div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 5</div> -->
+            <div style="text-align: center;">
+                <img src="img/ayamkrispi.jpg" style="width:500px; height: 300px;">
+                <div class="text">Ayam goreng dibaluri dengan tepung yang sangat krispi dan gurih</div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">4 / 5</div> -->
+            <div style="text-align: center;">
+                <img src="img/tongkol.jpg" style="width:500px; height: 300px;">
+                <div class="text">Ikan tongkol suwir dengan cabai ulek</div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">5 / 5</div> -->
+            <div style="text-align: center;">
+                <img src="img/krecek.jpg" style="width:500px; height: 300px;">
+                <div class="text">Kulit sapi oseng dengan cabai</div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script>let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }</script>
+</body>
+
+</html>
