@@ -4,8 +4,8 @@
 <html>
     <body>
         <?php 
-        $_SESSION ["makanfav"] = "Rujak";
-        $_SESSION ["minumfav"] = "Es Teler";
+        $_SESSION ["makananfav"] = "Rujak";
+        $_SESSION ["minumanfav"] = "Es Teler";
         echo "Session telah diset";
 
         ?>
