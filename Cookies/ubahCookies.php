@@ -1,6 +1,6 @@
 <?php 
     $name = "Mahasiswa";
-    $value = "Ali RIdho.M";
+    $value = "Zulfan Akmal S";
 
     setcookie($name, $value, time()+600);
     setcookie("Kelas","MI-1F", time()+3600);
