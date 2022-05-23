@@ -25,7 +25,7 @@
                 <td> <?php echo $row["id"]; ?> </td>
                 <td> <?php echo $row["name"]; ?> </td>
                 <td> <?php echo $row["address"]; ?> </td>
-                <td> <img src="Uploads/<?php echo $row["image"]; ?>" width="100" alt="image"> </td>
+                <td> <img src="Uploads/<?php echo $row["image"]; ?>" width="200" alt="image"> </td>
                 <td>
                     <a href="editForm.php?id=<?php echo $row["id"];?>">
                     <button>Edit</button></a> 
