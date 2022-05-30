@@ -11,7 +11,7 @@
     }
     $name = $_POST["myname"];
     $address = $_POST["myaddress"];
-    $image = $_FILES["myfoto"]['name'];
+    $image = $_FILES['myfoto']['name'];
 
     $query = "INSERT INTO student (name,address,image) VALUES
     ('$name', '$address', '$image')";

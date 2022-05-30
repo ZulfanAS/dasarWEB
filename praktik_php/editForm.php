@@ -28,6 +28,10 @@
                         <td> <textarea name="myaddress" rows="5" cols="20"><?php echo $row['address'];?></textarea></td>
                     </tr>
                     <tr>
+                    <td>Foto:</td>
+                    <td><input type="file" name="myfoto"></td>
+                    </tr>
+                    <tr>
                         <td><input type="submit" name="save" value="simpan"></td>
                     </tr>
                     <?php
