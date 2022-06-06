@@ -8,9 +8,9 @@
     $result = mysqli_query($connect,$query);
     $check = mysqli_num_rows($result);
 
-    if($check>0){
-        header("Location :homeCRUD.php");
+    if($check>1){
+        header("Location:homeCRUD.php");
     }else{
-        header("Location :loginForm.php?error=gagal");
+        header("Location:loginForm.php?error=gagal");
     }
 ?>
