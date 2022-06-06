@@ -13,7 +13,7 @@
     }
 
     $query = "INSERT into user(id , username, password)
-                VALUES('1','admin','123')";
+                VALUES('1','admin','123'), ('2','guest','543')";
                 
     
     if(mysqli_query($connect,$query)){
